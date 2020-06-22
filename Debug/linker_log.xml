@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Analog Devices/CrossCore Embedded Studio 2.9.2/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Sun Jun 21 23:59:01 2020
+'>
+<MSG id='03016200' mid='li1050' type='Error' >
+<TEXT><![CDATA['_main' ('main'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\UART_Echo_Back.doj'
+        Attempted redefinition: 'src\main.doj']]></TEXT>
+</MSG>
+</DOCUMENT>
