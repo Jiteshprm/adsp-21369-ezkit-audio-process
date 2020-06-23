@@ -124,14 +124,14 @@ void init_push_leds()
  {
 
 /*lights LED1 and LED2 when IRQ1 is asserted*/
-
+	 set_dac_vol_med();
 	 sysreg_bit_tgl(sysreg_FLAGS,FLG4|FLG5);
  }
 
  void IRQ0routine(void)
  {
 /*lights LED3 and LED4 when IRQ0 is asserted*/
-
+	 set_dac_vol_max();
 	 sysreg_bit_tgl(sysreg_FLAGS,FLG6|FLG7);
  }
 
@@ -156,6 +156,7 @@ void DAIroutine(void)
 /*Calling MISCA1 to light LED5&6*/
  int handle_MISCA1()
 {
+
 int temp=0;
 int temp1=0;
     /*lights LED5 when DPI_PB14 is asserted*/

@@ -91,7 +91,7 @@ all: Digital_In_Analog_Out_With_SRC_mod.dxe
 Digital_In_Analog_Out_With_SRC_mod.dxe: $(LDF_SRCS) $(SRC_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: CrossCore SHARC Linker'
-	cc21k -proc ADSP-21369 -si-revision any -TC:/Analog\ Devices/Digital_In_Analog_Out_With_SRC_mod/system/startup_ldf/app.ldf -no-mem -LC:/Analog\ Devices/Digital_In_Analog_Out_With_SRC_mod/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o Digital_In_Analog_Out_With_SRC_mod.dxe @input-file.txt  -flags-link -od,.\.
+	cc21k -proc ADSP-21369 -si-revision any -TC:/Users/jiteshpramodray/git/adsp-21369-ezkit-audio-process/system/startup_ldf/app.ldf -no-mem -LC:/Users/jiteshpramodray/git/adsp-21369-ezkit-audio-process/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o Digital_In_Analog_Out_With_SRC_mod.dxe @input-file.txt  -flags-link -od,.\.
 	@echo 'Finished building target: $@'
 	@echo ' '
 

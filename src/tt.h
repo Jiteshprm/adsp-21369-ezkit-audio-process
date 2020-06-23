@@ -52,4 +52,7 @@ extern  void init_push_leds();
 extern  void init_uart_before_pll();
 
 extern  void init_uart();
+extern  void set_dac_vol_med();
+extern  void set_dac_vol_max();
+
 #endif

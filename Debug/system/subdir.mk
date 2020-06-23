@@ -17,7 +17,7 @@ C_DEPS += \
 system/adi_initialize.doj: ../system/adi_initialize.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC C/C++ Compiler'
-	cc21k -c -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 @includes-c74f0e727448fd0f1a2c86707b894bdb.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "$@" "$<"
+	cc21k -c -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 @includes-65dfbd1ca2d639bd3d4d59a8bbcad7c7.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

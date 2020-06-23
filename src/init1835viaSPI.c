@@ -119,6 +119,56 @@ void Delay (int i)
        NOP();
 }
 
+void set_dac_vol_med()
+{
+	unsigned int Config1835ParamMed [] = {
+	            WR | DACVOL_L1 | DACVOL_MED,
+	            WR | DACVOL_R1 | DACVOL_MED,
+	            WR | DACVOL_L2 | DACVOL_MED,
+	            WR | DACVOL_R2 | DACVOL_MED,
+	            WR | DACVOL_L3 | DACVOL_MED,
+	            WR | DACVOL_R3 | DACVOL_MED,
+	            WR | DACVOL_L4 | DACVOL_MED,
+	            WR | DACVOL_R4 | DACVOL_MED
+	        } ;
+    int configSize = sizeof (Config1835ParamMed) / sizeof (int) ;
+    int i ;
+
+    SetupSPI1835 () ;
+
+    for (i = 0; i < configSize; ++i)
+    {
+        Configure1835Register (Config1835ParamMed[i]) ;
+    }
+
+    DisableSPI1835 () ;
+}
+
+void set_dac_vol_max()
+{
+	unsigned int Config1835ParamMed [] = {
+	            WR | DACVOL_L1 | DACVOL_MAX,
+	            WR | DACVOL_R1 | DACVOL_MAX,
+	            WR | DACVOL_L2 | DACVOL_MAX,
+	            WR | DACVOL_R2 | DACVOL_MAX,
+	            WR | DACVOL_L3 | DACVOL_MAX,
+	            WR | DACVOL_R3 | DACVOL_MAX,
+	            WR | DACVOL_L4 | DACVOL_MAX,
+	            WR | DACVOL_R4 | DACVOL_MAX
+	        } ;
+    int configSize = sizeof (Config1835ParamMed) / sizeof (int) ;
+    int i ;
+
+    SetupSPI1835 () ;
+
+    for (i = 0; i < configSize; ++i)
+    {
+        Configure1835Register (Config1835ParamMed[i]) ;
+    }
+
+    DisableSPI1835 () ;
+}
+
 void GetAllConfigs()
 {
 	unsigned int Config1835Param [16];

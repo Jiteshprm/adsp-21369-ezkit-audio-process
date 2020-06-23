@@ -30,21 +30,21 @@ C_DEPS += \
 system/startup_ldf/app_IVT.doj: ../system/startup_ldf/app_IVT.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC Assembler'
-	easm21k -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -si-revision any -g -D_DEBUG -DCORE0 @includes-499c99eb8bfa06ba4f5f5b564af1426e.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "$@" "$<"
+	easm21k -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -si-revision any -g -D_DEBUG -DCORE0 @includes-888dda99bae2ea8f0c194fa788eb83c8.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 system/startup_ldf/app_heaptab.doj: ../system/startup_ldf/app_heaptab.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC C/C++ Compiler'
-	cc21k -c -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 @includes-c74f0e727448fd0f1a2c86707b894bdb.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "$@" "$<"
+	cc21k -c -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 @includes-65dfbd1ca2d639bd3d4d59a8bbcad7c7.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 system/startup_ldf/app_startup.doj: ../system/startup_ldf/app_startup.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC Assembler'
-	easm21k -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -si-revision any -g -D_DEBUG -DCORE0 @includes-499c99eb8bfa06ba4f5f5b564af1426e.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
+	easm21k -file-attr ProjectName="Digital_In_Analog_Out_With_SRC_mod" -proc ADSP-21369 -si-revision any -g -D_DEBUG -DCORE0 @includes-888dda99bae2ea8f0c194fa788eb83c8.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
